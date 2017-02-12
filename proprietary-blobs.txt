@@ -64,6 +64,8 @@ lib/liblgftmitem.so
 
 # Camera
 bin/mm-qcamera-daemon
+bin/mm-qcamera-app
+bin/mm-pp-daemon
 lib/hw/camera.vendor.msm8226.so
 lib/libmmcamera_imx179.so
 lib/libchromatix_imx179_common.so
@@ -77,6 +79,7 @@ lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama_gp.so
 lib/libmorpho_noise_reduction.so
 lib/libmmjpeg_interface.so
+lib/libmm-omxcore.so
 lib/libmm-qcamera.so
 vendor/lib/liboemcamera.so
 vendor/lib/libmmjpeg.so
@@ -109,6 +112,7 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libmm-color-convertor.so
 vendor/lib/libactuator_dw9714_camcorder.so
 vendor/lib/libactuator_dw9714_camera.so
 vendor/lib/libactuator_dw9714_imx091_camcorder.so
