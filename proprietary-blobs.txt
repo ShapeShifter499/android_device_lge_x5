@@ -5,10 +5,10 @@ etc/firmware/a225p5_pm4.fw
 
 # Keystore firmware
 vendor/firmware/keymaster/keymaster.b00
-vendor/firmware/keymaster/keymaster.b02
-vendor/firmware/keymaster/keymaster.mdt
 vendor/firmware/keymaster/keymaster.b01
+vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster/keymaster.b03
+vendor/firmware/keymaster/keymaster.mdt
 
 # Venus (media) firmware
 etc/firmware/venus.b01
@@ -31,7 +31,6 @@ etc/firmware/a330_pfp.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_2_1.fw
 
 # DXHCP
 etc/firmware/dxhdcp2.b00
@@ -42,16 +41,17 @@ etc/firmware/dxhdcp2.mdt
 
 # NFC
 lib/hw/nfc_lg.default.so
+vendor/firmware/libpn544_fw.so
 
 # ACDB
-etc/acdbdata/Bluetooth_cal.acdb
-etc/acdbdata/General_cal.acdb
-etc/acdbdata/Global_cal.acdb
-etc/acdbdata/Handset_cal.acdb
-etc/acdbdata/Hdmi_cal.acdb
-etc/acdbdata/Headset_cal.acdb
-etc/acdbdata/Speaker_cal.acdb
-etc/acdbdata/workspaceFile.qwsp
+etc/ACDB/Bluetooth_cal.acdb
+etc/ACDB/General_cal.acdb
+etc/ACDB/Global_cal.acdb
+etc/ACDB/Handset_cal.acdb
+etc/ACDB/Hdmi_cal.acdb
+etc/ACDB/Headset_cal.acdb
+etc/ACDB/Speaker_cal.acdb
+etc/ACDB/workspaceFile.qwsp
 vendor/lib/libacdbloader.so
 
 # Bluetooth
@@ -59,23 +59,51 @@ bin/bdaddr_loader
 bin/btnvtool
 bin/hci_qcomm_init
 lib/libatd_corelib.so
+lib/libbt-aptX-ARM-4.2.2.so
 -lib/libbtnv.so
+vendor/lib/libbmc050
 lib/liblgftmitem.so
 
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.vendor.msm8226.so
-lib/libmmcamera_imx179.so
+lib/libchromatix_hi543_common.so
+lib/libchromatix_hi543_default_video.so
+lib/libchromatix_hi543_preview.so
+lib/libchromatix_hi543_snapshot.so
+lib/libmmcamera_hi543.so
+lib/libmmcamera_hi543_eeprom.so
+lib/libmmcamera_hi707.so
+lib/libchromatix_imx111_common.so
+lib/libchromatix_imx111_default_video.so
+lib/libchromatix_imx111_preview.so
+lib/libchromatix_imx111_snapshot.so
+lib/libmmcamera_imx111.so
+lib/libmmcamera_imx111_eeprom.so
+lib/libchromatix_imx119_common.so
+lib/libchromatix_imx119_default_video.so
+lib/libchromatix_imx119_preview.so
+lib/libchromatix_imx119_snapshot.so
+lib/libmmcamera_imx119.so
 lib/libchromatix_imx179_common.so
 lib/libchromatix_imx179_default_video.so
 lib/libchromatix_imx179_preview.so
 lib/libchromatix_imx179_snapshot.so
+lib/libmmcamera_imx179.so
+lib/libmmcamera_imx179_eeprom.so
+lib/libchromatix_imx219_common.so
+lib/libchromatix_imx219_default_video.so
+lib/libchromatix_imx219_preview.so
+lib/libchromatix_imx219_snapshot.so
+lib/libmmcamera_imx219.so
+lib/libmmcamera_imx219_eeprom.so
+lib/libmmcamera_mt9m114.so
 lib/libHDR.so
 lib/libmmcamera_interface.so
 lib/libmorpho_image_stab31.so
 lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama_gp.so
-lib/libmorpho_noise_reduction.so
+lib/libmorpho_panorama_wa_viewer.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
 lib/libqomx_core.so
@@ -84,16 +112,11 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libchromatix_imx119_common.so
-vendor/lib/libchromatix_imx119_default_video.so
-vendor/lib/libchromatix_imx119_preview.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
@@ -104,49 +127,12 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_imx119.so
-vendor/lib/libmmcamera_imx179_eeprom.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libcamera_imglib.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libactuator_dw9714_camcorder.so
-vendor/lib/libactuator_dw9714_camera.so
-vendor/lib/libactuator_dw9714_imx091_camcorder.so
-vendor/lib/libactuator_dw9714_imx091_camera.so
-vendor/lib/libactuator_dw9714_imx091.so
-vendor/lib/libactuator_dw9714_imx219_475t_camcorder.so
-vendor/lib/libactuator_dw9714_imx219_475t_camera.so
-vendor/lib/libactuator_dw9714_imx219_475t.so
-vendor/lib/libactuator_dw9714.so
-vendor/lib/libactuator_dw9716_camcorder.so
-vendor/lib/libactuator_dw9716_camera.so
-vendor/lib/libactuator_dw9716.so
-vendor/lib/libactuator_dw9718_camcorder.so
-vendor/lib/libactuator_dw9718_camera.so
-vendor/lib/libactuator_dw9718_imx179_camcorder.so
-vendor/lib/libactuator_dw9718_imx179_camera.so
-vendor/lib/libactuator_dw9718_imx179.so
-vendor/lib/libactuator_dw9718_imx219_495t_camcorder.so
-vendor/lib/libactuator_dw9718_imx219_495t_camera.so
-vendor/lib/libactuator_dw9718_imx219_495t.so
-vendor/lib/libactuator_dw9718_ov8858_camcorder.so
-vendor/lib/libactuator_dw9718_ov8858_camera.so
-vendor/lib/libactuator_dw9718_ov8858.so
-vendor/lib/libactuator_dw9718.so
-vendor/lib/libactuator_iu074_camcorder.so
-vendor/lib/libactuator_iu074_camera.so
-vendor/lib/libactuator_iu074.so
-vendor/lib/libactuator_ov12830_camcorder.so
-vendor/lib/libactuator_ov12830_camera.so
-vendor/lib/libactuator_ov12830.so
-vendor/lib/libactuator_ov8825_camcorder.so
-vendor/lib/libactuator_ov8825_camera.so
-vendor/lib/libactuator_ov8825.so
-vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so
-vendor/lib/libactuator_rohm_bu64243gwz_camera.so
-vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
@@ -156,28 +142,10 @@ vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 bin/sensors.qcom
 vendor/lib/libsensor_test.so
-vendor/lib/libsensor_thresh.so
 vendor/lib/libsensor_user_cal.so
-# just in case
-vendor/lib/libsensor_lge_cal.so
 
 # adsp
-lib/rfsa/adsp/libadsp_denoise_skel.so
-lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libadsp_denoise_skel.so
 lib/rfsa/adsp/libdspCV_skel.so
 lib/rfsa/adsp/libfastcvadsp.so
 lib/rfsa/adsp/libfastcvadsp_skel.so
-lib/rfsa/adsp/libscveT2T_skel.so
-
-# Widevine DRM
-vendor/firmware/widevine.b00|aa704ce4f330a6f95456f1b0bb8d8caad8166616
-vendor/firmware/widevine.b01|0b2b977a3434aea95a2b9a7c00a63ee67af3d0cf
-vendor/firmware/widevine.b02|b1d6ec9748740a3d313ea758c4d1876b427df644
-vendor/firmware/widevine.b03|28be5d8aeb9d5091573eea42e31a102f0a2cc97a
-vendor/firmware/widevine.mdt|6c1abb99e4bf9dc91aa8f8fad619c8c2774ff2ef
-vendor/lib/drm/libdrmwvmplugin.so|3bee766222895f524421eb996ca6a08bcf95f19f
-vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
-vendor/lib/libdrmdecrypt.so
-vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
-vendor/lib/libwvm.so|59c4c078f4b897ddac8f665309b7a3f25522f207
-vendor/lib/mediadrm/libwvdrmengine.so|6bdcc4d59b07ccbdd7b07a99677406ade3d2e232
