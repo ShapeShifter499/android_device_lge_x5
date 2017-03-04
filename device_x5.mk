@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
 
 # NFC packages for volt
 PRODUCT_PACKAGES += \
-    nfc.x5 \
+    nfc.default \
     libnfc \
     libnfc_jni \
     Nfc \
