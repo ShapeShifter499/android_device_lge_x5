@@ -61,7 +61,7 @@ bin/hci_qcomm_init
 lib/libatd_corelib.so
 lib/libbt-aptX-ARM-4.2.2.so
 -lib/libbtnv.so
-vendor/lib/libbmc050.so
+vendor/lib/libbmc050
 lib/liblgftmitem.so
 
 # Camera
